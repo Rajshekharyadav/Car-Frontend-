@@ -423,4 +423,64 @@ html,body{
 #page5{
     width: 100%;
     height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+#page5-part1{
+    width: 45%;
+    /* background-color: blue; */
+
+}
+#page5-part1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 20%;
+}
+#page5-part2{
+    width: 50%;
+    /* background-color: blueviolet; */
+    
+}
+#page5-part2 h1{
+    font-size: 4rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    letter-spacing: 2px;
+    /* background-color: rgb(255, 31, 68); */
+    text-transform: uppercase;
+}
+#page5-part2 h2{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    /* background-color: aqua; */
+    line-height: 2.5rem;
+    font-weight: 800;
+    margin-top: 2vw;
+}
+#page5-part2 p{
+    font-size: 1rem;
+    margin-top: 2vw;
+}
+
+
+#part2-img{
+    width: 100%;
+    height: 35%;
+    /* background-color: palegreen; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+.img-part2{
+    width: 45%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+.img-part2 img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
 }
