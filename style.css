@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    padding-top:0.5px;
+}
+#nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* padding: 0 10px; */
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+#nav h2{
+    width: 25%;
+    margin-left: 40px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 2.5rem;
+    /* background-color: blue; */
+}
+#nav h3{
+    /* background-color: blue; */
+    height: 100%;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#nav h3:nth-last-child(1){
+    width: 10%;
+}
+#container{
+    width: 90%;
+    height: 100%;
+    background-color: pink;
+    margin: 5%;
+    position: relative;
+    color:white;
+    font-family: sans-serif;
+}
+#v-cont{
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    /* margin: 5%; */
+    
+}
+#v-cont video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 50%;
+    width: 100%;
+    /* background-color: blue; */
+    position:absolute;
+    bottom: 0;
+    padding: 5vw;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family:"Protest Guerrilla", sans-serif;
+    font-size: 3rem;
+    mix-blend-mode: difference;
+}
+#over1 h2{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 21px 22px;
+    
+}
+#over2{
+    padding-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#s-container{
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: s-anime;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 90%;
+    border-radius: 50%;
+    width: 16%;
+    object-fit: cover;
+    object-position: 30% 30%;
+    margin: 0.5vw;
+
+}
+
+@keyframes s-anime {
+    from{
+        transform: translateX(0%);
+
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabets{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: cyan; */
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-style: italic;
+    gap:0.3vw;
+}
+#alphabets h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    
+
+}
+#alphabets h6{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.6vw 0.9vw;
+    /* margin: 0.2vw; */
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    /* background-color: yellow; */
+    cursor: pointer;
+    transition: alll ease 0.2s;
+
+}
+#alphabets h6:hover{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 7vw;
+    margin-top: 4vw;
+}
+#page1-part1{
+    width: 55%;
+    /* background-color: red; */
+}
+#page1-part1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+#part1-text{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    mix-blend-mode:color-dodge;
+    /* height: 20vh; */
+}
+#page1-part2{
+    width: 40%;
+    height: 80%;
+    /* background-color: aquamarine; */
+}
+#page1-part2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+#part2-text{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    /* background-color: aqua; */
+    gap:5vw
+}
+#part2-text h2{
+    font-family: "Protest Guerrilla", sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    /* background-color: pink; */
+}
+#part2-text h4{
+    /* text-align: end; */
+    font-family: sans-serif;
+    font-size: 1rem;
+    /* background-color: blue; */
+    /* width: 100%; */
+}
+
+
+/* page2============= */
+#page2{
+    margin-top: 20vh;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 7vw;
+}
+#page2-part1{
+    width: 40%;
+    /* background-color: pink; */
+    position: relative;
+}
+#page2-part1 img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    animation-name: img-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* z-index: -1; */
+}
+
+@keyframes img-animation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#page2-part1 h3{
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    padding: 5vw 8vw;
+    /* background-color: aqua; */
+    font-size: 3rem;
+    
+
+}
+#page2-part1 h4{
+    font-size: 1.5rem;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+#page2-part2{
+    width: 55%;
+    background-color: blue;
+}
+#page2-part2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#page3{
+    width: 100%;
+    height: 90%;
+    margin-top: 3vw;
+    padding: 2vw 6vw;
+    position: relative;
+}
+#page3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:bottom;
+}
+#page3-txt{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin:3vw 8vw;
+    color:#ffffff;
+    padding:1.8vw 2vw;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* ----------Page 4------------ */
+#page4{
+    width: 100%;
+    height: 100%;
+    padding: 3vw 5vw;
+    /* background-color: red; */
+}
+#page4 > h1{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+}
+.elem{
+    width: 100%;
+    height: 16vh;
+    /* background-color: blue; */
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.elem img{
+    position: absolute;
+    width: 200px;
+    left: -2%;
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+.elem:hover img{
+    left:35%;
+    width: 230px;
+    opacity: 1;
+}
+.elem h4{
+    font-size: 2.9rem;
+    line-height: 2.5rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    width: 20%;
+    /* background-color: red; */
+    margin: 1vw 2vw;
+    text-transform: uppercase;
+}
+.elem-part2{
+    width: 40%;
+    /* background-color: red; */
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.elem-part2 h1{
+    font-size: 2.6rem;
+    font-weight: 900;
+
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+#marque{
+    width: 100%;
+    /* display: inline-block; */
+    /* display: flex; */
+    padding: 1vw;
+    /* background-color: aqua; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#marque h1{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: 1000;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    letter-spacing: 1px;
+    /* background-color: pink; */
+    margin-right: 16px;
+    
+    animation-name: t-move;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes t-move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#page5{
+    width: 100%;
+    height: 100%;
+}
